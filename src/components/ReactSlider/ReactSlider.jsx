@@ -1119,7 +1119,7 @@ class ReactSlider extends React.Component {
                 ref: r => {
                     this.slider = r;
                 },
-                style: { position: 'relative' },
+                style: { ...this.props.style, position: 'relative' },
                 className: this.props.className + (this.props.disabled ? ' disabled' : ''),
                 onMouseDown: this.onSliderMouseDown,
                 onClick: this.onSliderClick,
